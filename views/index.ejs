@@ -14,7 +14,7 @@
         <ul>
           <% messages.forEach((msg) => { %>
             <li>
-              <small><%= msg.added %></small>
+              <small><%= formatDate(msg.added) %></small>
               <h2><%= msg.user %></h2>
               <p><%= msg.text %></p>
             </li>

@@ -3,7 +3,6 @@
 :root {
   --black: #1F2421;
   --green: #216869;
-  --light-green: #9CC5A1;
   --white: #F4F6F5;
 }
 
@@ -113,12 +112,14 @@ input {
 }
 
 .btn-primary {
-  background: var(--light-green);
+  color: var(--white);
+  background: var(--green);
 }
 
 .btn-secondary {
   text-decoration: none;
   background: var(--white);
+  border:1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 1024px) {
