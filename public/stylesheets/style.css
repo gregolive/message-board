@@ -2,9 +2,9 @@
 
 :root {
   --black: #1F2421;
-  --green: #49A078;
-  --lt-green: #9CC5A1;
-  --white: #E9ECEA;
+  --green: #216869;
+  --light-green: #9CC5A1;
+  --white: #F4F6F5;
 }
 
 body {
@@ -21,7 +21,11 @@ main {
 }
 
 a {
-  color: var(--secondary);
+  color: var(--green);
+  font-size: 1.1rem;
+}
+
+a:hover {
   text-decoration: none;
 }
 
@@ -40,7 +44,7 @@ ul {
 
 li {
   background: var(--white);
-  border: 1px solid var(--lt-green);
+  border: 1px solid var(--green);
   border-radius: 0.3rem;
   padding: 0.75rem 1.25rem;
   display: grid;
@@ -48,11 +52,67 @@ li {
 }
 
 small {
-  color: var(--green)
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  row-gap: 1rem;
+}
+
+label {
+  font-size: 1.1rem;
+  padding-top: 0.25rem;
+}
+
+input, textarea {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  border: 1px solid var(--black);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.3rem;
+}
+
+input {
+  max-width: max(12rem, 20vw);
+}
+
+.buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  font-family: 'Rubik', sans-serif;
+  color: var(--black);
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+
+.btn:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+}
+
+.btn-primary {
+  background: var(--light-green);
+}
+
+.btn-secondary {
+  background: var(--white);
 }
 
 @media screen and (max-width: 1024px) {
